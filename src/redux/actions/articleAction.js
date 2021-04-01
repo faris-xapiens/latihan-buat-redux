@@ -10,8 +10,7 @@ export const fetchingArticle = () => {
     dispatch(fetchingArticleRequest());
     axios({
       method: "GET",
-      url: "https://jsonplaceholder.typicode.com/posts",
-      responseType: "json",
+      url: "https://jsonplaceholder.typicode.com/posts/",
     })
       .then(({ data }) => {
         const articles = data;
